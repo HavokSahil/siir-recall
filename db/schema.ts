@@ -1,0 +1,2 @@
+import {sqliteTable, text, integer, primaryKey} from 'drizzle-orm/sqlite-core';
+export const notes=sqliteTable('notes',{userId:text('user_id').notNull(),id:text('id').notNull(),title:text('title').notNull(),subject:text('subject').notNull(),body:text('body').notNull(),position:integer('position').notNull().default(0),updatedAt:text('updated_at').notNull()},t=>[primaryKey({columns:[t.userId,t.id]})]);

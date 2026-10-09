@@ -1,0 +1,17 @@
+node_modules/
+dist/
+build/
+.next/
+.vinext/
+.wrangler/
+.sites-runtime/
+.openai/
+.codex/
+.agents/
+.aws/
+*.tsbuildinfo
+.env
+.env.*
+!.env.example
+*.log
+quantum-error-correction-parallel-notes.zip
